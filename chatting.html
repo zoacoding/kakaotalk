@@ -33,40 +33,35 @@
     <div class="container">
       <!-- 제목 영역 -->
       <div class="title">
-        <h2>친구</h2>
-        <i class="fa-solid fa-user-plus"></i>
+        <h2>채팅</h2>
+        <i class="fa-solid fa-comment-medical"></i>
       </div>
 
       <!-- 검색창 영역 -->
       <div class="search">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="이름으로 검색" />
+        <input type="text" placeholder="채팅방 이름, 참여자 검색" />
       </div>
 
       <!-- 친구 목록 영역 -->
       <div>
-        <span class="subtitle">내 기본프로필</span>
-
-        <div class="profile">
-          <img src="images/1.jpg" alt="프로필" />
-          <span>조아코딩</span>
-        </div>
-
-        <span class="subtitle">친구</span>
-
-        <div class="profile">
+        <div class="friend">
           <img src="images/2.jpg" alt="프로필" />
-          <a href="chat.html"><span>홍길동</span></a>
-        </div>
 
-        <div class="profile">
-          <img src="images/3.jpg" alt="프로필" />
-          <span>김철수</span>
-        </div>
+          <div class="chatlist">
+            <!-- 이름이랑 시간이 들어갈 그룹 -->
+            <div class="chatprofile">
+              <span>홍길동</span>
+              <span class="chattime">오후 4:31</span>
+            </div>
 
-        <div class="profile">
-          <img src="images/4.jpg" alt="프로필" />
-          <span>이순신</span>
+            <!-- 채팅 미리보기가 들어갈 그룹 -->
+            <div>
+              <a href="chat.html"
+                ><span class="chatmessage">만나서 반갑습니다!</span></a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>

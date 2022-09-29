@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap');
 
 html,
 body {
@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 14px;
   line-height: 1;
   display: grid;
@@ -159,4 +159,74 @@ a {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.chatting {
+  width: 100vw; /* 뷰포인트 => 디바이스 전체 화면 => 가로 크기를 전체 화면으로 만들어라 */
+  height: 100vh; /* 뷰포인트 => 디바이스 전체 화면 => 세로 크기를 전체 화면으로 만들어라 */
+}
+
+.chatting-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.chatting-profile {
+  display: flex;
+  align-items: center; /* align-items, justify-contents */
+  height: 100px;
+  padding: 0 20px; /* 상하 내부 여백 / 좌우 내부 여백 */
+}
+
+.talk {
+  display: flex;
+  align-items: center;
+}
+
+.talk-profile .name {
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.time {
+  font-size: 80%;
+}
+
+.chatting-content {
+  background-color: rgb(161, 212, 223);
+  overflow-y: scroll;
+  height: calc(100% - 250px);
+  padding: 30px;
+}
+
+.text {
+  background-color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 90%;
+}
+
+.chatting-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+button {
+  width: 100px;
+  height: 70px;
+}
+
+.chatting-input {
+  display: flex;
+  padding: 10px 20px;
 }

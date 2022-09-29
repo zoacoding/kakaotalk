@@ -4,9 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>KakaoTalk</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
   </head>
   <body>
-    대화창
+    <div class="chatting">
+      <div class="chatting-profile">
+        <div class="chatting-image">
+          <img src="/images/2.jpg" alt="프로필 이미지" />
+        </div>
+        <div class="chatting-header">
+          <span class="name">홍길동</span>
+          <div class="buttons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-archive"></i>
+            <i class="fas fa-sliders-h"></i>
+          </div>
+        </div>
+      </div>
+      <div class="chatting-content">
+        <div class="talk">
+          <div class="chatting-image">
+            <img src="/images/2.jpg" alt="프로필 이미지" />
+          </div>
+          <div class="talk-profile">
+            <div class="name">홍길동</div>
+            <div class="message">
+              <span class="text">안녕하세요!</span>
+              <span class="time">오후 4:30</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="talk">
+          <div class="chatting-image">
+            <img src="/images/2.jpg" alt="프로필 이미지" />
+          </div>
+          <div class="talk-profile">
+            <div class="name">홍길동</div>
+            <div class="message">
+              <span class="text">만나서 반갑습니다!</span>
+              <span class="time">오후 4:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chatting-input">
+        <input type="text" />
+        <button>전송</button>
+      </div>
+    </div>
   </body>
 </html>
